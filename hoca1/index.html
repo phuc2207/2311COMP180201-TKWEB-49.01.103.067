@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<title> Hồ Cá Của Pu</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="./assets/style/stylefish.css">
+	<link rel="icon" href="./assets/images/logo.png" type="image/x-icon">
+</head>
+<body>
+	<button id="musicButton" class="btn_change" onclick="toggleMusic()">
+		<h3>Đổi nhạc</h3>
+	</button>
+	<div id="musicOptions" style="display: none">
+		<ul id="musicList">
+			<li>
+				<button class="btn_change" onclick="playMusic('./assets/Music/Nhạc tết.mp3')">
+					<h4>Nhạc 1</h4>
+				</button>
+			</li>
+			<li>
+				<button class="btn_change" onclick="playMusic('./assets/Music/Babysharkdododo.mp3')">
+					<h4>Nhạc 2</h4>
+				</button>
+			</li>
+		</ul>
+	</div>
+	<div id="container">
+		<audio id="audio" controls autoplay>
+			<source id="audioSource" src="./assets/Music/Nhạc tết.mp3" />
+		</audio>
+	</div>
+
+	  <div id="background_image">
+		<img id="backgroundImage" src="./assets/images/bg1.png" alt="Background" />
+	  </div>
+	  <button id="settingsButton" class="btn_change" onclick="toggleSettings()">
+		<h3>Đổi nền</h3>
+	  </button>
+	  <div id="backgroundOptions" style="display: none">
+		<ul id="backgroundList">
+		  <li>
+			<button class="btn_change" onclick="changeBackground(0)">
+			  <h4>Nền 1</h4>
+			</button>
+		  </li>
+		  <li>
+			<button class="btn_change" onclick="changeBackground(1)">
+			  <h4>Nền 2</h4>
+			</button>
+		  </li>
+		</ul>
+	  </div>
+	  
+	<div id="botnuoc5" class="bnc"><img src="./assets/images/botnuoc.gif" alt="Bọt nước4"></div>
+	<div id="botnuoc4" class="bnc"><img src="./assets/images/botnuoc.gif" alt="Bọt nước4"></div>
+	<div id="botnuoc3" class="bnc"><img src="./assets/images/botnuoc.gif" alt="Bọt nước3"></div>
+	<div id="botnuoc2" class="bnc"><img src="./assets/images/botnuoc.gif" alt="Bọt nước2"></div>
+	<div id="botnuoc" class="bnc"><img src="./assets/images/botnuoc.gif" alt="Bọt nước"></div>
+
+	<div id="ca1"><img src="./assets/images/ca1.gif" alt="Cá 1"></div>
+	<div id="ca21"><img src="./assets/images/ca2.gif" alt="Cá 21"></div>
+	<div id="ca22"><img src="./assets/images/ca2.gif" alt="Cá 22"></div>
+	<div id="ca23"><img src="./assets/images/ca2.gif" alt="Cá 23"></div>
+	<div id="ca24"><img src="./assets/images/ca2.gif" alt="Cá 24"></div>
+	<div id="ca25"><img src="./assets/images/ca2.gif" alt="Cá 25"></div>
+	<div id="ca3"><img src="./assets/images/ca3.gif" alt="Cá 3"></div>
+	<div id="ca4"><img src="./assets/images/ca4.gif" alt="Cá 4"></div>
+	
+	<div id="sua2" class="sua"><img src="./assets/images/sứa.gif" alt="Sứa2"></div>
+	<div id="sua1" class="sua"><img src="./assets/images/sứa.gif" alt="Sứa1"></div>
+	
+	<div id="ngoctrai"><img src="./assets/images/ngoctrai.gif" alt="Ngọc trai"></div>
+	<div id="sanho"><img src="./assets/images/sanho.gif" alt="San hô"></div>
+
+	<div id="rong11" class="rong"><img src="./assets/images/rong1.gif" alt="Rong11"></div>
+	<div id="rong12" class="rong"><img src="./assets/images/rong1.gif" alt="Rong12"></div>
+	<div id="rong13" class="rong"><img src="./assets/images/rong1.gif" alt="Rong13"></div>
+	<div id="rong14" class="rong"><img src="./assets/images/rong1.gif" alt="Rong14"></div>
+	<div id="rong2" class="rong"><img src="./assets/images/rong2.gif" alt="Rong2"></div>
+	<div id="rong3"><img src="./assets/images/rong3.gif" alt="Rong3"></div>
+</div>
+<script src="./assets/style/changebg.js"></script>
+</body>
+</html>

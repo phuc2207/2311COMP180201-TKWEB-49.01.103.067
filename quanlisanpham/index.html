@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Sản Phẩm</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 2em;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #87CEEB;
+        }
+
+        section {
+            padding: 40px;
+            text-align: justify;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Quản Lý Sản Phẩm</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Trang Chủ</a>
+        <a href="#product-list">Danh Sách Sản Phẩm</a>
+        <a href="#add-product">Thêm Sản Phẩm</a>
+        <a href="#edit-product">Chỉnh Sửa Sản Phẩm</a>
+    </nav>
+
+    <section id="product-list">
+        <h2>Danh Sách Sản Phẩm</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Tên Sản Phẩm</th>
+                    <th>Giá</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Iphone 15 Pro Max 1TB</td>
+                    <td>44.990.000đ</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Iphone 15 Pro Max 512GB</td>
+                    <td>39.890.000đ</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Iphone 15 Pro 1TB</td>
+                    <td>40.490.000đ</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="add-product">
+        <h2>Thêm Sản Phẩm Mới</h2>
+        <form action="/add_product" method="post">
+            <label for="productName">Tên Sản Phẩm:</label>
+            <input type="text" id="productName" name="productName" required>
+
+            <label for="productPrice">Giá:</label>
+            <input type="text" id="productPrice" name="productPrice" required>
+
+            <input type="submit" value="Thêm Sản Phẩm">
+        </form>
+    </section>
+
+    <section id="edit-product">
+        <h2>Chỉnh Sửa Sản Phẩm</h2>
+        <form action="/edit_product" method="post">
+            <label for="productId">ID Sản Phẩm:</label>
+            <input type="text" id="productId" name="productId" required>
+
+            <label for="newProductName">Tên Mới:</label>
+            <input type="text" id="newProductName" name="newProductName" required>
+
+            <label for="newProductPrice">Giá Mới:</label>
+            <input type="text" id="newProductPrice" name="newProductPrice" required>
+
+            <input type="submit" value="Chỉnh Sửa Sản Phẩm">
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2023 Quản Lý Sản Phẩm. Tất cả các quyền được bảo lưu.</p>
+    </footer>
+
+</body>
+</html>
+
