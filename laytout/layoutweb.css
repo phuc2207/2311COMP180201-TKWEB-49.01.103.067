@@ -1,0 +1,151 @@
+*{
+    margin: 0; padding: 0;
+}
+
+article{
+    margin: 10px 0;
+    width: 70%;
+    float: left;
+}
+
+aside{
+    margin: 10px 0;
+    width: 30%;
+    float: left;
+}
+
+header .container .row .col-6 p{
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background: url(Image/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+nav{
+    background: #555;
+    padding: 8px 0;
+}
+
+nav .container .row div a{
+    padding: 5px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.4s;
+}
+
+nav .container .row div a:hover{
+    color: rosybrown;
+}
+
+nav .container .row div{
+    display: flex;
+}
+
+nav .container .row div input , button{
+    height: 30px;
+    border-radius: 4px;
+}
+
+nav .container .row div button{
+    padding: 0 10px;
+    color: #111;
+    transition: 0.4s;
+}
+
+nav .container .row div button:hover{
+    background: #555;
+    color: #fff;
+}
+
+article .container .row{
+    margin: 10px 0;
+}
+
+article .container .hh-product .card .card-body img{
+    width: 100%;
+    height: 100%;
+}
+
+article .container .hh-product .card{
+    text-align: center;
+}
+
+article .container .hh-product .card .card-footer a{
+    text-decoration: none;
+    background-color: #999;
+    padding: 5px 0;
+    border-radius: 10px;
+    font-size: large;
+    color: #fff;
+    transition: 0.4s;
+}
+
+article .container .hh-product .card .card-footer a:hover{
+    color: #111;
+    background: pink;
+}
+
+aside .container .hh-card{
+    margin: 10px 0;
+}
+
+aside .container .hh-card .list-group .list-group-item{
+    transition: 0.4s;
+}
+
+aside .container .hh-card .list-group .list-group-item:hover{
+    color: rosybrown;
+}
+
+article .container .row article{
+    width: 60%;
+}
+
+article .container .row article div img{
+    width: 500px;
+    height: 550px;
+}
+
+article .container .row aside{
+    width: 40%;
+}
+
+article .container .row aside .product-header{
+    border-bottom: solid #222;
+}
+
+article .container .row aside .product-btn form button{
+    background: #555;
+    color: #fff;
+    transition: 0.4s;
+}
+
+article .container .row aside .product-btn form button:hover{
+    background: pink;
+    color: #111;
+}
+
+article .container .row aside .product-btn{
+    padding-bottom: 5px;
+    border-bottom: solid #222;
+}
+
+article .container .row aside .product-detail{
+    margin-top: 5px ;
+    border-bottom: solid #222;
+}
+
+article .container .row aside .share{
+    margin-top: 5px;
+}
+
+article .container .row aside .share i{
+    font-size: 25px;
+    margin-right: 5px;
+}
