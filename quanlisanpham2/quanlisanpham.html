@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management</title>
+    <link rel="stylesheet" href="quanlisanpham.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="heading">Quản Lý Sản Phẩm</h1>
+    </header>
+
+    <article class="content">
+        <section class="add-product">
+            <h2>Manage <span>Products</span></h2>
+                <label for="product-id">Id Product :</label>
+                <input type="number" name="product-id1" id="productID1" required>
+                <label for="product-name">Product Name :</label>
+                <input type="text" name="product-name1" id="productName1" required>
+                <label for="price-product">Price :</label>
+                <input type="text" name="product-price1" id="productPrice1" required>
+                <button onclick="add()">ADD PRODUCT</button>
+        </section>
+    </article>
+
+    <aside>
+        <h2>List <span>Products</span></h2>
+        <table class="list-products" >
+            <thead>
+                <tr>
+                    <th class="id">ID</th>
+                    <th class="name">Name</th>
+                    <th class="price">Price</th>
+                    <th class="action">Action</th>
+                </tr>
+            </thead>
+            <tbody id="render" style="text-align: center;">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </aside>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="quanlisanpham.js"></script>
+</body>
+</html>

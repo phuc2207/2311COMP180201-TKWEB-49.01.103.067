@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600&family=Nunito:wght@200;300;400;600&family=Poppins:wght@100;300;400;500;600&family=Roboto:wght@300;400;500;700&display=swap');
+
+*{
+    font-family: 'Kanit', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+body{
+    background: #f9f9f9;
+}
+
+.header{
+    top:0; left: 0; right: 0;
+    background: #222;
+    color: white;
+    padding: 3rem 9%;
+    text-align: center;
+}
+
+article{
+    float: left;
+    width: 40%;
+}
+
+aside{
+    float: left;
+    width: 60%;
+}
+
+.content .add-product{
+    background: #222;
+    color: #fff;
+    margin: 10px;
+    margin-top: 15px;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+.content .add-product h2{
+    font-size: 3rem;
+    margin-top: -30px;
+    text-align: center;
+}
+
+.content .add-product h2 span{
+    color: pink;
+}
+
+.content .add-product label{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+input{
+    width: 100%;
+    min-height: 25px;
+    font-size: 18px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.content .add-product button{
+    width: 50%;
+    margin-top: 20px;
+    padding: 8px 0;
+    color: #fff;
+    font-size: 1rem;
+    background: #333;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.content .add-product button:hover{
+    background: pink;
+    color: black;
+}
+
+aside h2{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: -20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead tr th{
+    border: 1px solid #222;
+    padding: 8px;
+    text-align: center;
+    background: #444;
+    color: #fff;
+}
+
+.id{
+    width: 40px;
+}
+
+.price{
+    width: 100px;
+    padding: 0 70px;
+}
+
+td{
+    border: 1px solid #222;
+}
+
+aside table tbody tr td button{
+    background: #222;
+    color: #fff;
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 2px 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+aside table tbody tr td button:hover{
+    background: pink;
+    color: black;
+}
